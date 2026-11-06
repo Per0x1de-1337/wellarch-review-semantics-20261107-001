@@ -1,0 +1,13 @@
+name: Benign PR CI Approval Seed
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "benign_ci=true"
